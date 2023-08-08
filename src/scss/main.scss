@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("ttf");
+}
+@import "./variables/colors";
+@import "./variables/typography";
+@import "./variables/miscellaneous";
+@import "./variables/layout";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: $font-color;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main {
+  background-color: $main-background;
+}
+
+footer {
+  background-color: $secondary-background;
+}

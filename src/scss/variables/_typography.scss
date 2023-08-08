@@ -1,0 +1,53 @@
+.heading-xl {
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+}
+
+.heading-l {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -1.5px;
+}
+
+.heading-m {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.heading-dev {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+  letter-spacing: -0.444px;
+}
+
+p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.button {
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.286px;
+  border: none;
+  padding-bottom: 5px;
+  background-color: transparent;
+}
+
+.border-bottom {
+  border-bottom: 2px solid #4ee1a0;
+}

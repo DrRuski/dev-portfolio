@@ -1,3 +1,13 @@
-export default function app() {
-  return <div>Hello</div>;
+import Header from "./components/header";
+import Main from "./components/main";
+import Footer from "./components/footer";
+
+export default function App() {
+  return (
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  );
 }

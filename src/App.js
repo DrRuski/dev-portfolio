@@ -5,9 +5,13 @@ import Footer from "./components/footer";
 export default function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <div className="min-vh-100">
+        <Header />
+        <Main />
+      </div>
+      <div className="footer">
+        <Footer />
+      </div>
     </>
   );
 }

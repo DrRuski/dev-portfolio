@@ -2,57 +2,128 @@
   font-family: "Space Grotesk";
   src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("ttf");
 }
-.heading-xl {
-  font-size: 88px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 88px;
-  letter-spacing: -2.5px;
+@media only screen and (min-width: 550px) {
+  .heading-xl {
+    color: #fff;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+  }
+  .heading-l {
+    color: #fff;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+  }
+  .heading-m {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .heading-dev {
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+    letter-spacing: -0.444px;
+  }
+  p {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .button {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    border: none;
+    padding-bottom: 5px;
+    background-color: transparent;
+  }
+  .button :hover {
+    color: var(--green, #4ee1a0);
+  }
+  .text-underline-style {
+    border-bottom: 6px solid #4ee1a0;
+  }
 }
-
-.heading-l {
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: -1.5px;
+@media only screen and (max-width: 549px) {
+  .heading-xl {
+    color: var(--white, #fff);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+    letter-spacing: -1.136px;
+  }
+  .heading-l {
+    color: var(--white, #fff);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+    letter-spacing: -1px;
+  }
+  .heading-m {
+    color: var(--white, #fff);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .heading-dev {
+    color: var(--white, #fff);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.333px;
+  }
+  p {
+    color: var(--white, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+  }
+  .button {
+    color: var(--white, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 2.286px;
+    border: none;
+    padding-bottom: 5px;
+    background-color: transparent;
+  }
+  .text-underline-style {
+    border-bottom: 4px solid #4ee1a0;
+  }
 }
-
-.heading-m {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-}
-
-.heading-dev {
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px; /* 100% */
-  letter-spacing: -0.444px;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 p {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px;
+  margin: 0;
+  padding: 0;
 }
 
-.button {
-  color: var(--white, #fff);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 2.286px;
-  border: none;
-  padding-bottom: 5px;
-  background-color: transparent;
-}
-
-.border-bottom {
+.button-border-bottom {
   border-bottom: 2px solid #4ee1a0;
 }
 
@@ -60,71 +131,19 @@ p {
   list-style: none;
 }
 
-.width {
-  width: 1440px;
+.img-bg {
+  background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
 }
 
-.flex {
+.break-line {
   display: flex;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.gap-5 {
-  gap: 5px;
-}
-
-.gap-10 {
-  gap: 10px;
-}
-
-.gap-15 {
-  gap: 15px;
-}
-
-.gap-20 {
-  gap: 20px;
-}
-
-.gap-25 {
-  gap: 25px;
-}
-
-.gap-30 {
-  gap: 30px;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
+  flex-shrink: 0;
+  border-bottom: 1px solid #fff;
 }
 
 body {
   font-family: "Space Grotesk", sans-serif;
   color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
 header,

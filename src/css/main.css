@@ -91,6 +91,12 @@
     line-height: 32px; /* 133.333% */
     letter-spacing: -0.333px;
   }
+  .heading-project-framework {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+  }
   p {
     color: var(--white, #fff);
     font-size: 16px;
@@ -127,6 +133,10 @@ p {
   border-bottom: 2px solid #4ee1a0;
 }
 
+.brand-color {
+  color: #4ee1a0;
+}
+
 .list-style {
   list-style: none;
 }
@@ -139,6 +149,10 @@ p {
   display: flex;
   flex-shrink: 0;
   border-bottom: 1px solid #fff;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {

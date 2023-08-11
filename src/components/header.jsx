@@ -15,7 +15,9 @@ function SocialMedia() {
     <div className="container">
       <div className="row py-3 gap-4">
         <div className="col-sm-8 text-center">
-          <h3 className="heading-dev">elias / ekornås</h3>
+          <h3 className="heading-dev">
+            elias<span className="brand-color">.</span>ekornås
+          </h3>
         </div>
 
         <div className="col-sm-4">

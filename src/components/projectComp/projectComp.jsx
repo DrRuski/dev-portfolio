@@ -1,8 +1,8 @@
 import Anchor from "../miscellaneous/anchor";
 
-export default function ProjectsList({ projectsData }) {
+export default function ProjectsList({ devData }) {
   return (
-    <section className="container">
+    <section className="container d-flex flex-column gap-4">
       <div className="row">
         <div className="col">
           <h2 className="heading-l">Projects</h2>
@@ -11,17 +11,16 @@ export default function ProjectsList({ projectsData }) {
           <Anchor>CONTACT ME</Anchor>
         </div>
       </div>
-      <div className="row gap-5">
-        {projectsData.map((project) => (
+      <div className="row row-gap-5 justify-content-lg-between">
+        {devData.projects.map((project) => (
           <ProjectItem
             key={project.title}
             title={project.title}
             website={project.website}
             code={project.code}
             image={project.image}
-            js={project.js}
-            html={project.html}
-            css={project.css}
+            summary={project.summary}
+            frameworks={project.frameworks}
           />
         ))}
       </div>
@@ -29,40 +28,25 @@ export default function ProjectsList({ projectsData }) {
   );
 }
 
-function ProjectItem({ title, website, code, image, js, html, css }) {
+function ProjectItem({ title, website, code, image, frameworks, summary }) {
   return (
-    <div className="col d-flex flex-column gap-3">
-      <div>
-        <img src={image} alt={image} />
+    <div className="col col-lg-6 d-flex flex-column gap-2 justify-content-between">
+      <div className="d-flex flex-column gap-3">
+        <img src={image} alt={image} className="image-fluid" />
         <h3 className="heading-m">{title}</h3>
-        <ProjectFrameworks js={js} html={html} css={css} />
+        <p>{summary}</p>
+        <ul className="d-flex flex-wrap p-0 gap-3">
+          {frameworks.map((item) => (
+            <li className="list-style" key={item}>
+              <h5 className="heading-project-framework">{item}</h5>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="d-flex gap-5">
         <Anchor link={website}>VIEW PROJECT</Anchor>
         <Anchor link={code}>VIEW CODE</Anchor>
       </div>
     </div>
-  );
-}
-
-function ProjectFrameworks({ js, html, css }) {
-  return (
-    <ul className="list-style d-flex gap-5 p-0">
-      {html && (
-        <li>
-          <h4 className="heading-project-framework">HTML</h4>
-        </li>
-      )}
-      {css && (
-        <li>
-          <h4 className="heading-project-framework">CSS</h4>
-        </li>
-      )}
-      {js && (
-        <li>
-          <h4 className="heading-project-framework">JS</h4>
-        </li>
-      )}
-    </ul>
   );
 }

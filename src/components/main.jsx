@@ -1,21 +1,20 @@
 import IntroSection from "./introComp/introComp";
 import SkillList from "./skillsComp/skillsComp";
 import ProjectsList from "./projectComp/projectComp";
-import { projectsData } from "./data/projectsData";
-import { skillsData } from "./data/skillsData";
+import { devData } from "./data/devData";
 
 export default function Main() {
   return (
-    <main className="d-flex flex-column gap-5">
+    <main className="d-flex flex-column gap-4">
       <IntroSection />
       <div className="container">
         <hr className="break-line"></hr>
       </div>
-      <SkillList skillsData={skillsData} />
+      <SkillList devData={devData} />
       <div className="container">
         <hr className="break-line"></hr>
       </div>
-      <ProjectsList projectsData={projectsData} />
+      <ProjectsList devData={devData} />
     </main>
   );
 }

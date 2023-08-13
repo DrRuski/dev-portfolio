@@ -1,10 +1,10 @@
 import rings from "../../assets/images/pattern-rings.svg";
 
-export default function SkillList({ skillsData }) {
+export default function SkillList({ devData }) {
   return (
     <section className="container">
-      <div className="row gap-5 justify-content-lg-center">
-        {skillsData.map((skill) => (
+      <div className="row gap-4 justify-content-lg-center">
+        {devData.skills.map((skill) => (
           <SkillItem
             key={skill.name}
             name={skill.name}

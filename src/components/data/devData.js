@@ -1,3 +1,12 @@
+// Developer Basic Information
+import elias from "../../assets/images/elias2.png";
+
+// Developer SoMe
+import githubLogo from "../../assets/images/icon-github.svg";
+import linkedIn from "../../assets/images/icon-linkedin.svg";
+import twitter from "../../assets/images/icon-twitter.svg";
+
+// Developer Projects
 import eatSplit from "../../assets/projects/preview-eat-n-split.png";
 import gameHub from "../../assets/projects/Cross-Course-Project.png";
 import lazySloth from "../../assets/projects/lazy-sloth.png";
@@ -6,24 +15,37 @@ export const devData = {
   basics: {
     name: "Elias Ekornås",
     label: "Front-end Developer",
-    image: "../../",
+    image: elias,
     email: "elias.ekornas@gmail.com",
-    phone: "(912) 555-4321",
+    phone: "(+47) 413 42 036",
     url: "https://johndoe.com",
     summary: `Based in Norway, I am a front-end developer who is passionate about
     building accessible web apps that users love.`,
     location: {
-      address: "2712 Broadway St",
-      postalCode: "CA 94115",
-      city: "San Francisco",
-      countryCode: "US",
-      region: "California",
+      address: "Grimvegen 13",
+      postalCode: "6150",
+      city: "Ørsta",
+      countryCode: "NOR",
+      region: "Møre og Romsdal",
     },
     profiles: [
       {
         network: "Twitter",
-        username: "john",
-        url: "https://twitter.com/john",
+        username: "IMEkon",
+        url: "https://twitter.com/IMEkon",
+        icon: twitter,
+      },
+      {
+        network: "LinkedIn",
+        username: "Elias Ekornås",
+        url: "https://www.linkedin.com/in/elias-ekorn%C3%A5s/",
+        icon: linkedIn,
+      },
+      {
+        network: "GitHub",
+        username: "DrRuski",
+        url: "https://github.com/DrRuski",
+        icon: githubLogo,
       },
     ],
   },
@@ -150,8 +172,7 @@ export const devData = {
       image: lazySloth,
       website: "https://noroffauctionhouse.imdev.no/",
       code: "https://github.com/DrRuski/noroff-auction-house",
-      summary:
-        "An auction site is looking to launch a website where users can add items to be bid on and bid on items other users have put up for auction. When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings.",
+      summary: "",
       highlights: ["Won award at AIHacks 2016"],
       frameworks: ["HTML", "CSS", "JS"],
     },
@@ -162,8 +183,7 @@ export const devData = {
       image: eatSplit,
       website: "https://tangerine-genie-e307db.netlify.app",
       code: "https://github.com/DrRuski/eat-n-split",
-      summary:
-        "A small application with the functionality to add new friends into a new array without mutating the original one and calculating a bill that will affect the displayed balance of your friends.",
+      summary: "",
       highlights: ["Won award at AIHacks 2016"],
       frameworks: ["HTML", "CSS", "JS"],
     },

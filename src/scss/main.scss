@@ -5,17 +5,14 @@
 @import "./variables/colors";
 @import "./variables/typography";
 @import "./variables/miscellaneous";
+@import "./variables/layout";
+@import "./variables/input";
 
 body {
   font-family: "Space Grotesk", sans-serif;
+  background-color: $main-background;
   color: $font-color;
 }
-
-header,
-main {
-  background-color: $main-background;
-}
-
 footer {
   background-color: $secondary-background;
 }

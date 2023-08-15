@@ -1,5 +1,6 @@
 // Developer Basic Information
 import elias from "../../assets/images/elias2.png";
+import eliasDesktop from "../../assets/images/elias_desktop.svg";
 
 // Developer SoMe
 import githubLogo from "../../assets/images/icon-github.svg";
@@ -15,6 +16,7 @@ export const devData = {
   basics: {
     name: "Elias Ekornås",
     label: "Front-end Developer",
+    imageDesktop: eliasDesktop,
     image: elias,
     email: "elias.ekornas@gmail.com",
     phone: "(+47) 413 42 036",

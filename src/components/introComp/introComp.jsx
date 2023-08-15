@@ -5,22 +5,36 @@ import Anchor from "../miscellaneous/anchor";
 export default function IntroSection({ dev }) {
   return (
     <section className="container">
-      <div className="row flex-column flex-lg-row-reverse gap-4">
+      <div className="row flex-column flex-lg-row-reverse gap-4 align-items-lg-center">
         <div className="col col-lg-4 d-flex justify-content-center position-relative">
-          <img src={rings} alt="" className="position-absolute end-50 z-1" />
+          <img
+            src={rings}
+            alt=""
+            className="position-absolute end-50 z-1 mobileRings"
+          />
 
-          <div className="img-bg z-2">
+          <picture className="img-bg z-2">
+            <source
+              srcSet={dev.imageDesktop}
+              className="img-fluid z-3"
+              media="(min-width:550px)"
+            />
             <img src={dev.image} alt="" className="img-fluid z-3" />
-          </div>
+          </picture>
 
           <img
             src={circle}
-            alt=""
-            className="position-absolute z-1 top-50 start-50"
+            alt={circle}
+            className="position-absolute top-50 start-50 z-1 mobileRings"
           />
         </div>
 
-        <div className="d-flex flex-column gap-4 gap-lg-5 col">
+        <div className="d-flex flex-column gap-4 gap-lg-5 col position-relative">
+          <img
+            src={rings}
+            alt={rings}
+            className="position-absolute end-50 z-1 desktopRings"
+          />
           <div className="text-center text-lg-start">
             <h1 className="heading-xl">
               Nice to meet you! I'm{" "}

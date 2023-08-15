@@ -147,21 +147,48 @@ a {
   text-decoration: none;
 }
 
-input,
-textarea {
+@media only screen and (min-width: 550px) {
+  .mobileRings {
+    display: none;
+  }
+}
+@media only screen and (max-width: 549px) {
+  .desktopRings {
+    display: none;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .gap-desktop {
+    gap: 100px;
+  }
+}
+@media only screen and (max-width: 549px) {
+  .gap-mobile {
+    gap: 80px;
+  }
+}
+.label-style {
+  opacity: 0.5;
+}
+
+.input-style {
+  color: #fff;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #fff;
+  opacity: 0.5;
+}
+
+.input-style:focus {
+  outline: none !important;
+  border-bottom: 1px solid #4ee1a0;
+  opacity: 1;
 }
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  color: #fff;
-}
-
-header,
-main {
   background-color: #151515;
+  color: #fff;
 }
 
 footer {

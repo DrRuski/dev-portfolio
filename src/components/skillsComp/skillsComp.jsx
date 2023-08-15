@@ -1,7 +1,7 @@
 export default function SkillList({ skillsData }) {
   return (
     <section className="container">
-      <div className="row gap-4 justify-content-lg-center">
+      <div className="row gap-4 row-gap-lg-5 justify-content-lg-between">
         <hr className="border" />
         {skillsData.map((skill) => (
           <SkillItem
@@ -18,7 +18,7 @@ export default function SkillList({ skillsData }) {
 function SkillItem({ name, experience }) {
   return (
     <div className="col-12 col-lg-3 text-center text-lg-start">
-      <h3>{name}</h3>
+      <h3 className="mb-lg-2">{name}</h3>
       <p>{experience}</p>
     </div>
   );

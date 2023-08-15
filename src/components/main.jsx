@@ -4,7 +4,7 @@ import ProjectsList from "./projectComp/projectComp";
 
 export default function Main({ devData }) {
   return (
-    <main className="d-flex flex-column gap-5 py-5">
+    <main className="d-flex flex-column gap-desktop gap-mobile mb-5">
       <IntroSection dev={devData.basics} />
       <SkillList skillsData={devData.skills} />
       <ProjectsList projectsData={devData.projects} />

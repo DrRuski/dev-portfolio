@@ -9,7 +9,7 @@ export default function Header({ devData }) {
 function SocialMedia({ socialMedia }) {
   return (
     <div className="container">
-      <div className="row py-1 py-lg-4 py-lg-2 gap-4 justify-content-center align-items-center">
+      <div className="row py-2 py-lg-4 py-lg-2 gap-4 justify-content-center align-items-center">
         <div className="col-6 col-lg text-center text-lg-start">
           <h3 className="heading-dev">
             elias<span className="brand-color">.</span>ekornås

@@ -1,6 +1,6 @@
-export default function Anchor({ children, link }) {
+export default function Anchor({ children, link, classes = "button" }) {
   return (
-    <a className="button" href={link}>
+    <a className={classes} href={link}>
       <span>{children}</span>
     </a>
   );

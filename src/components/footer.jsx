@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { validEmail } from "./miscellaneous/regex";
 import Button from "./miscellaneous/button";
 import rings from "../assets/images/pattern-rings.svg";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 export default function Footer({ devData }) {
@@ -60,15 +61,20 @@ export default function Footer({ devData }) {
 function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [emailErr, setEmailErr] = useState(false);
   const [message, setMessage] = useState("");
+  const [submitSuc, setSubmitSuc] = useState(false);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
 
     if (!name || !email || !message) {
+      return;
+    }
+    if (!validEmail.test(email)) {
+      setEmailErr(true);
       return;
     }
 
@@ -88,9 +94,13 @@ function ContactForm() {
         }
       );
 
+    setSubmitSuc(true);
     setName("");
     setEmail("");
     setMessage("");
+    setTimeout(() => {
+      setSubmitSuc(false);
+    }, 3000);
   };
 
   return (
@@ -122,6 +132,11 @@ function ContactForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+          {emailErr && (
+            <p className="error-message text-end mt-1">
+              Sorry, this format is invalid.
+            </p>
+          )}
         </div>
 
         <div className="d-flex flex-column">
@@ -140,7 +155,13 @@ function ContactForm() {
         </div>
       </div>
       <div className="text-end">
-        <Button>SEND MESSAGE</Button>
+        {!submitSuc ? (
+          <Button>SEND MESSAGE</Button>
+        ) : (
+          <Button classes="button brand-color">
+            MESSAGE SENT <FontAwesomeIcon icon={faCheck} />
+          </Button>
+        )}
       </div>
     </form>
   );

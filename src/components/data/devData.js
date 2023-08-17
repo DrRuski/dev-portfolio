@@ -1,11 +1,22 @@
 // Developer Basic Information
-import elias from "../../assets/images/elias2.png";
-import eliasDesktop from "../../assets/images/elias_desktop.svg";
+import eliasImg from "../../assets/images/eliasImage.webp";
 
 // Developer SoMe
 import githubLogo from "../../assets/images/icon-github.svg";
 import linkedIn from "../../assets/images/icon-linkedin.svg";
 import twitter from "../../assets/images/icon-twitter.svg";
+
+// Developer Skills
+import bootstrap from "../../assets/icons/bootstrap5.svg";
+import css from "../../assets/icons/css.svg";
+import html from "../../assets/icons/html5.svg";
+import react from "../../assets/icons/reactjs.svg";
+import sass from "../../assets/icons/sass.svg";
+import vsCode from "../../assets/icons/vs.svg";
+import git from "../../assets/icons/git.svg";
+import figma from "../../assets/icons/figma.svg";
+import js from "../../assets/icons/js.svg";
+import github from "../../assets/icons/github.svg";
 
 // Developer Projects
 import eatSplit from "../../assets/projects/preview-eat-n-split.png";
@@ -16,8 +27,7 @@ export const devData = {
   basics: {
     name: "Elias Ekornås",
     label: "Front-end Developer",
-    imageDesktop: eliasDesktop,
-    image: elias,
+    image: eliasImg,
     email: "elias.ekornas@gmail.com",
     phone: "(+47) 413 42 036",
     url: "https://johndoe.com",
@@ -113,27 +123,45 @@ export const devData = {
   skills: [
     {
       name: "HTML",
-      experience: "2 Years Experience",
+      icon: html,
     },
     {
       name: "CSS",
-      experience: "2 Years Experience",
-    },
-    {
-      name: "SASS",
-      experience: "2 Years Experience",
+      icon: css,
     },
     {
       name: "JS",
-      experience: "1 Years Experience",
+      icon: js,
     },
     {
-      name: "UX Design",
-      experience: "3 Years Experience",
+      name: "SASS",
+      icon: sass,
+    },
+
+    {
+      name: "REACT",
+      icon: react,
     },
     {
-      name: "React",
-      experience: "0.5 Years Experience",
+      name: "BOOTSTRAP",
+      icon: bootstrap,
+    },
+
+    {
+      name: "GIT",
+      icon: git,
+    },
+    {
+      name: "VSCODE",
+      icon: vsCode,
+    },
+    {
+      name: "GITHUB",
+      icon: github,
+    },
+    {
+      name: "FIGMA",
+      icon: figma,
     },
   ],
   languages: [
@@ -176,7 +204,7 @@ export const devData = {
       code: "https://github.com/DrRuski/noroff-auction-house",
       summary: "",
       highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["HTML", "CSS", "JS"],
+      frameworks: ["HTML", "SASS", "JS"],
     },
     {
       title: "EAT'N'SPLIT",
@@ -187,7 +215,7 @@ export const devData = {
       code: "https://github.com/DrRuski/eat-n-split",
       summary: "",
       highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["HTML", "CSS", "JS"],
+      frameworks: ["REACT", "CSS"],
     },
   ],
 };

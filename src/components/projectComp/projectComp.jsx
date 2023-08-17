@@ -32,7 +32,7 @@ function ProjectItem({ title, website, code, image, frameworks }) {
   return (
     <div className="col col-lg-6 d-flex flex-column gap-2 justify-content-between">
       <div className="d-flex flex-column gap-2">
-        <img src={image} alt={image} className="image-fluid" />
+        <img src={image} alt={title} className="image-fluid" />
         <h3 className="heading-m">{title}</h3>
         <ul className="d-flex flex-wrap p-0 gap-3">
           {frameworks.map((item) => (

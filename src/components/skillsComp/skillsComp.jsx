@@ -1,13 +1,17 @@
 export default function SkillList({ skillsData }) {
   return (
     <section className="container">
-      <div className="row gap-4 row-gap-lg-5 justify-content-lg-between">
+      <div className="row gap-4 row-gap-lg-5 justify-content-center justify-content-lg-between">
         <hr className="border" />
+        <h2 className="heading-l text-center">
+          My Development Tech<span className="brand-color">.</span>Stack
+        </h2>
         {skillsData.map((skill) => (
           <SkillItem
             key={skill.name}
             name={skill.name}
             experience={skill.experience}
+            icon={skill.icon}
           />
         ))}
       </div>
@@ -15,11 +19,13 @@ export default function SkillList({ skillsData }) {
   );
 }
 
-function SkillItem({ name, experience }) {
+function SkillItem({ name, icon }) {
   return (
-    <div className="col-12 col-lg-3 text-center text-lg-start">
-      <h3 className="mb-lg-2">{name}</h3>
-      <p>{experience}</p>
+    <div className="col-6 col-lg-2">
+      <div className="d-flex align-items-center justify-content-start">
+        <img className="img-fluid icon-layout" src={icon} alt={icon} />
+        <h3>{name}</h3>
+      </div>
     </div>
   );
 }

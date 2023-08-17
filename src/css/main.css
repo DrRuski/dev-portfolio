@@ -12,6 +12,16 @@ p {
   padding: 0;
 }
 
+.error-message {
+  color: #ff6f5b;
+  font-family: "Space Grotesk";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.167px;
+}
+
 @media only screen and (min-width: 550px) {
   .heading-xl {
     color: #fff;
@@ -161,10 +171,28 @@ a {
   .gap-desktop {
     gap: 100px;
   }
+  .img-layout {
+    object-fit: cover;
+    width: 444.876px;
+    height: 618px;
+    flex-shrink: 0;
+  }
+  .icon-layout {
+    width: 70px;
+  }
 }
 @media only screen and (max-width: 549px) {
   .gap-mobile {
     gap: 80px;
+  }
+  .img-layout {
+    object-fit: cover;
+    width: 174.207px;
+    height: 242px;
+    flex-shrink: 0;
+  }
+  .icon-layout {
+    width: 70px;
   }
 }
 .label-style {

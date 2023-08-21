@@ -129,24 +129,11 @@ export const devData = {
       name: "CSS",
       icon: css,
     },
-    {
-      name: "JS",
-      icon: js,
-    },
+
     {
       name: "SASS",
       icon: sass,
     },
-
-    {
-      name: "REACT",
-      icon: react,
-    },
-    {
-      name: "BOOTSTRAP",
-      icon: bootstrap,
-    },
-
     {
       name: "GIT",
       icon: git,
@@ -156,12 +143,25 @@ export const devData = {
       icon: vsCode,
     },
     {
+      name: "REACT",
+      icon: react,
+    },
+
+    {
+      name: "JS",
+      icon: js,
+    },
+    {
       name: "GITHUB",
       icon: github,
     },
     {
       name: "FIGMA",
       icon: figma,
+    },
+    {
+      name: "BOOTSTRAP",
+      icon: bootstrap,
     },
   ],
   languages: [

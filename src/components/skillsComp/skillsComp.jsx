@@ -7,12 +7,7 @@ export default function SkillList({ skillsData }) {
           My Development Tech<span className="brand-color">.</span>Stack
         </h2>
         {skillsData.map((skill) => (
-          <SkillItem
-            key={skill.name}
-            name={skill.name}
-            experience={skill.experience}
-            icon={skill.icon}
-          />
+          <SkillItem key={skill.name} name={skill.name} icon={skill.icon} />
         ))}
       </div>
     </section>
@@ -21,10 +16,10 @@ export default function SkillList({ skillsData }) {
 
 function SkillItem({ name, icon }) {
   return (
-    <div className="col-6 col-lg-2">
+    <div className="col-6 col-md-3 col-lg-2 p-0">
       <div className="d-flex align-items-center justify-content-start">
-        <img className="img-fluid icon-layout" src={icon} alt={icon} />
-        <h3>{name}</h3>
+        <img className="icon-layout" src={icon} alt={icon} />
+        <h3 className="heading-m">{name}</h3>
       </div>
     </div>
   );

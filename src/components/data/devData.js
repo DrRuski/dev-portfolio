@@ -19,6 +19,7 @@ import js from "../../assets/icons/js.svg";
 import github from "../../assets/icons/github.svg";
 
 // Developer Projects
+import EliasGloriousGoods from "../../assets/projects/EliasGloriousGoods.png";
 import eatSplit from "../../assets/projects/preview-eat-n-split.png";
 import gameHub from "../../assets/projects/Cross-Course-Project.png";
 import lazySloth from "../../assets/projects/lazy-sloth.png";
@@ -129,24 +130,11 @@ export const devData = {
       name: "CSS",
       icon: css,
     },
-    {
-      name: "JS",
-      icon: js,
-    },
+
     {
       name: "SASS",
       icon: sass,
     },
-
-    {
-      name: "REACT",
-      icon: react,
-    },
-    {
-      name: "BOOTSTRAP",
-      icon: bootstrap,
-    },
-
     {
       name: "GIT",
       icon: git,
@@ -156,12 +144,25 @@ export const devData = {
       icon: vsCode,
     },
     {
+      name: "REACT",
+      icon: react,
+    },
+
+    {
+      name: "JS",
+      icon: js,
+    },
+    {
       name: "GITHUB",
       icon: github,
     },
     {
       name: "FIGMA",
       icon: figma,
+    },
+    {
+      name: "BOOTSTRAP",
+      icon: bootstrap,
     },
   ],
   languages: [
@@ -183,6 +184,17 @@ export const devData = {
     },
   ],
   projects: [
+    {
+      title: "Elias` Glorious Goods.",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: EliasGloriousGoods,
+      website: "https://jade-paprenjak-6721a7.netlify.app/",
+      code: "https://github.com/DrRuski/js-frameworks-ca",
+      summary: "",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: ["REACT", "TAILWIND", "JS"],
+    },
     {
       title: "GAME HUB - E-COMMERCE",
       startDate: "2019-01-01",

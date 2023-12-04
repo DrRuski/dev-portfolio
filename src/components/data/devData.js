@@ -17,8 +17,10 @@ import git from "../../assets/icons/git.svg";
 import figma from "../../assets/icons/figma.svg";
 import js from "../../assets/icons/js.svg";
 import github from "../../assets/icons/github.svg";
+import tailwind from "../../assets/icons/tailwind.svg";
 
 // Developer Projects
+import CabinQuest from "../../assets/projects/CabinQuest.png";
 import EliasGloriousGoods from "../../assets/projects/EliasGloriousGoods.png";
 import eatSplit from "../../assets/projects/preview-eat-n-split.png";
 import gameHub from "../../assets/projects/Cross-Course-Project.png";
@@ -27,13 +29,13 @@ import lazySloth from "../../assets/projects/lazy-sloth.png";
 export const devData = {
   basics: {
     name: "Elias Ekornås",
-    label: "Front-end Developer",
+    label: "Frontend Developer",
     image: eliasImg,
     email: "elias.ekornas@gmail.com",
     phone: "(+47) 413 42 036",
     url: "https://johndoe.com",
-    summary: `Based in Norway, I am a front-end developer who is passionate about
-    building accessible web apps that users love.`,
+    summary: `Based in Ålesund, Norway, I am a passionate Frontend Developer who loves learning new technologies and improving my craft based on current industry needs and trends.
+    As it stands I am currently in the process of mastering React, Tailwind and React Query to further extend my stack`,
     location: {
       address: "Grimvegen 13",
       postalCode: "6150",
@@ -86,14 +88,22 @@ export const devData = {
   ],
   education: [
     {
-      institution: "University",
-      url: "https://institution.com/",
-      area: "Software Development",
-      studyType: "Bachelor",
-      startDate: "2011-01-01",
-      endDate: "2013-01-01",
-      score: "4.0",
-      courses: ["DB1101 - Basic SQL"],
+      institution: "Noroff School of technology and digital media",
+      url: "https://www.noroff.no/en/studies/vocational-school/front-end-development",
+      area: "Frontend Development",
+      studyType: "Higher Professional Degree",
+      startDate: "2021-01-10",
+      endDate: "2024-01-10",
+      score: "A",
+    },
+    {
+      institution: "Noroff School of technology and digital media",
+      url: "https://www.noroff.no/en/studies/vocational-school/ux-design",
+      area: "User Experience",
+      studyType: "Professional Degree",
+      startDate: "2019-07-25",
+      endDate: "2020-06-25",
+      score: "A",
     },
   ],
   awards: [
@@ -164,11 +174,19 @@ export const devData = {
       name: "BOOTSTRAP",
       icon: bootstrap,
     },
+    {
+      name: "TAILWIND",
+      icon: tailwind,
+    },
   ],
   languages: [
     {
-      language: "English",
+      language: "Norwegian",
       fluency: "Native speaker",
+    },
+    {
+      language: "English",
+      fluency: "Fluent Business Communication",
     },
   ],
   interests: [
@@ -179,11 +197,44 @@ export const devData = {
   ],
   references: [
     {
-      name: "Jane Doe",
+      name: "Oliver Dipple",
+      position:
+        "Line Manager for the Online Front-end Development Course at Noroff",
       reference: "Reference…",
+    },
+    {
+      name: "Michael-John Phillip",
+      position:
+        "Line Manager for the Online Front-end Development Course at Noroff",
+      reference: `To whom it may concern
+      This letter is a reference for Elias Ekornås who is studying Front-end Development with
+      Noroff from January 2022, and will graduate in January 2024.
+      I first met Elias when he was studying User Experience Design at Noroff and he and a 
+      fellow student had taken the initiative to re-design the Learning Management System 
+      that the vocational college uses and were interviewing staff and students about the 
+      LMS. I was impressed by their innovative spirit and desire to make a lasting 
+      improvement on the experience of other students.
+      Elias is a very engaged student, participating well in his class, and asking for
+      clarifications when needed. For us this is important that a student develops this
+      evaluative judgement to know what they already know, and know what they need to
+      know to tackle a problem.
+      In his studies, Elias has consistently performed well and got an A-grade on his Project 
+      Exam 1 at the end of first year. I am confident that Elias will continue to perform well in 
+      his studies as he has shown himself to be a determined student.`,
     },
   ],
   projects: [
+    {
+      title: "CabinQuest",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: CabinQuest,
+      website: "https://cabinquest.no/",
+      code: "https://github.com/DrRuski/CabinQuest",
+      summary: "",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: ["REACT", "TAILWIND", "JS"],
+    },
     {
       title: "Elias` Glorious Goods.",
       startDate: "2019-01-01",

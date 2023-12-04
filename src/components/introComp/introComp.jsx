@@ -49,7 +49,7 @@ export default function IntroSection({ dev }) {
           />
           <div className="text-center text-lg-start">
             <h1 className="d-flex flex-column heading-lg align-items-center align-items-lg-start">
-              <span>Hello everyone! 👋</span>
+              <span>Hello! 👋</span>
               <span>
                 My name is{" "}
                 <span className="text-underline-style">{dev.name}.</span>

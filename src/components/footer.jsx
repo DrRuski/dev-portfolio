@@ -17,9 +17,10 @@ export default function Footer({ devData }) {
             <div className="text-center text-lg-start d-flex flex-column gap-4 position-relative">
               <h2 className="heading-xl">Contact</h2>
               <p>
-                I would love to hear about your project and how I could help.
-                Please fill in the form, and I'll get back to you as soon as
-                possible.
+                If you have a burning question you would like to ask, a job
+                position that I could potentially fill or a project that I could
+                help with. Do contact me and I will reply as soon as I am
+                available.
               </p>
               <img
                 src={rings}

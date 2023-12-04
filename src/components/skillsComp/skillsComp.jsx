@@ -1,7 +1,7 @@
 export default function SkillList({ skillsData }) {
   return (
     <section className="container">
-      <div className="row gap-4 row-gap-lg-5 justify-content-center justify-content-lg-between">
+      <div className="row gap-2 row-gap-lg-5 justify-content-center justify-content-lg-between">
         <hr className="border" />
         <h2 className="heading-l text-center">
           My Development Tech<span className="brand-color">.</span>Stack

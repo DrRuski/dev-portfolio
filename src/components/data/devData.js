@@ -34,8 +34,8 @@ export const devData = {
     email: "elias.ekornas@gmail.com",
     phone: "(+47) 413 42 036",
     url: "https://johndoe.com",
-    summary: `Based in Ålesund, Norway, I am a passionate Frontend Developer who loves learning new technologies and improving my craft based on current industry needs and trends.
-    As it stands I am currently in the process of mastering React, Tailwind and React Query to further extend my stack`,
+    summary: `Based in Ålesund, Norway, I am a passionate Frontend Developer who loves learning new technologies and improving my craft based on current industry trends.
+    At the moment i am fully invested in mastering React, Tailwind and React Query to further expand my stack.`,
     location: {
       address: "Grimvegen 13",
       postalCode: "6150",

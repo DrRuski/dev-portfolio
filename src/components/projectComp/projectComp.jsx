@@ -5,7 +5,7 @@ export default function ProjectsList({ projectsData }) {
     <section className="container d-flex flex-column gap-4">
       <div className="row">
         <div className="col">
-          <h2 className="heading-l">Projects</h2>
+          <h2 className="heading-l">Portfolio</h2>
         </div>
         <div className="col text-end">
           <Anchor link="#contactForm">CONTACT ME</Anchor>
